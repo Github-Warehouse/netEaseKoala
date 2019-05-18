@@ -13,7 +13,7 @@ require.config({
             exports: 'exports'
         },
         '_swiper': {
-            deps: ['css!styles/statics/_swiper'],
+            deps: ['css!styles/statics/swiper'],
             exports: 'exports'
         }
     },

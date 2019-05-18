@@ -6,7 +6,6 @@ const babel = require('gulp-babel')
 const uglify = require('gulp-uglify')
 const webserver = require('gulp-webserver')
 const express = require('express')
-// const https = require('htpps')
 gulp.task('compileHTML', () => {
     gulp.src('./src/**/*.html')
         .pipe(gulp.dest('dist'))
@@ -19,12 +18,20 @@ gulp.task('compileCSS', () => {
         .pipe(gulp.dest('dist/styles'))
 })
 gulp.task('compileJS', () => {
-    gulp.src('./src/scripts/**/*.js')
+    gulp.src('./src/scripts/statics/**/*.js')
         .pipe(babel({
             'presets': ['@babel/env']
         }))
         .pipe(uglify())
-        .pipe(gulp.dest('dist/scripts'))
+        .pipe(gulp.dest('dist/scripts/statics'))
+    gulp.src('./src/scripts/js/**/*.js')
+        .pipe(babel({
+            'presets': ['@babel/env']
+        }))
+        .pipe(uglify())
+        .pipe(gulp.dest('dist/scripts/js'))
+    gulp.src('./src/scripts/libs/**/*.js')
+        .pipe(gulp.dest('dist/scripts/libs'))
 })
 gulp.task('server', () => {
     gulp.src('dist')
@@ -51,3 +58,4 @@ gulp.task('server', () => {
     })
     app.listen(9528)
 })
+gulp.task('build', ['compileHTML', 'compileCSS', 'compileJS'])

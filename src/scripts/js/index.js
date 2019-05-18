@@ -1,4 +1,4 @@
-require(['libs/config'], () => {
+require(['../libs/config'], () => {
     require([
         'jquery',
         'css',
@@ -11,11 +11,11 @@ require(['libs/config'], () => {
             console.log($);
             console.log(Swiper);
         })
-        let xhr = new XMLHttpRequest()
-        xhr.open('get', 'http://localhost:9528/api/goodlist')
-        xhr.onload = function () {
-            console.log(xhr.response);
-        }
-        xhr.send()
+        // let xhr = new XMLHttpRequest()
+        // xhr.open('get', 'http://localhost:9528/api/goodlist')
+        // xhr.onload = function () {
+        //     console.log(xhr.response);
+        // }
+        // xhr.send()
     })
 })

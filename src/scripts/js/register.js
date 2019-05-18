@@ -1,4 +1,4 @@
-require(['libs/config'], () => {
+require(['../libs/config'], () => {
     require([
         'jquery',
         'css',
