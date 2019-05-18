@@ -1,5 +1,5 @@
 require.config({
-    baseUrl: "http://localhost:5500/",
+    baseUrl: "http://localhost:5500",
     shim: {
         'bootstrap': {
             deps: [

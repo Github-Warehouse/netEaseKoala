@@ -6,6 +6,8 @@ const babel = require('gulp-babel')
 const uglify = require('gulp-uglify')
 const webserver = require('gulp-webserver')
 const express = require('express')
+const https = require('https')
+const imagemin = require('gulp-imagemin')
 gulp.task('compileHTML', () => {
     gulp.src('./src/**/*.html')
         .pipe(gulp.dest('dist'))
@@ -33,6 +35,11 @@ gulp.task('compileJS', () => {
     gulp.src('./src/scripts/libs/**/*.js')
         .pipe(gulp.dest('dist/scripts/libs'))
 })
+gulp.task('compileIMG', () => {
+    gulp.src('./src/images/**/*.*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('dist/images'))
+})
 gulp.task('server', () => {
     gulp.src('dist')
         .pipe(webserver({
@@ -42,20 +49,21 @@ gulp.task('server', () => {
     gulp.watch('src/**/*.html', ['compileHTML'])
     gulp.watch('src/styles/**/*.scss', ['compileCSS'])
     gulp.watch('src/scripts/**/*.js', ['compileJS'])
+    gulp.watch('src/images/**/*.*', ['compileIMG'])
 
     let app = express()
-    app.get('./api/goodlist', (req, res) => {
+    app.get('/api/goodlist', (req, res) => {
         res.setHeader('Access-Control-Allow-Origin', '*')
         res.setHeader('Content-Type', 'text/plain;charset=utf8')
         let proxy = https.request({
             hostname: 'www.smartisan.com',
             path: '/product/shop_categories',
             method: 'get'
-        }, (Response) => {
-            Response.pipe(res)
+        }, (response) => {
+            response.pipe(res)
         })
         proxy.end()
     })
     app.listen(9528)
 })
-gulp.task('build', ['compileHTML', 'compileCSS', 'compileJS'])
+gulp.task('build', ['compileHTML', 'compileCSS', 'compileJS', 'compileIMG'])

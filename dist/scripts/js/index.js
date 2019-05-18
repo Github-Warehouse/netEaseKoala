@@ -1,1 +1,1 @@
-"use strict";require(["../libs/config"],function(){require(["jquery","css","bootstrap","jquery-ui","jquery.validate","_swiper"],function(e,o){e(function(){console.log(e),console.log(o)})})});
+"use strict";require(["../libs/config"],function(){require(["jquery","css","bootstrap","jquery-ui","jquery.validate","_swiper"],function(o,t){o(function(){o.ajax({type:"get",url:"http://localhost:9528/api/goodlist"}).done(function(o){console.log(o)})})})});

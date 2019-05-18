@@ -8,14 +8,12 @@ require(['../libs/config'], () => {
         '_swiper'
     ], ($, Swiper) => {
         $(function () {
-            console.log($);
-            console.log(Swiper);
+            $.ajax({
+                type:'get',
+                url:'http://localhost:9528/api/goodlist'
+            }).done(function(data){
+                console.log(data);
+            })
         })
-        // let xhr = new XMLHttpRequest()
-        // xhr.open('get', 'http://localhost:9528/api/goodlist')
-        // xhr.onload = function () {
-        //     console.log(xhr.response);
-        // }
-        // xhr.send()
     })
 })
