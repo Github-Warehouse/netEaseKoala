@@ -1,0 +1,82 @@
+html,
+body {
+  overflow: hidden;
+  //   background: red;
+}
+.jumbotron {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+$color: #999;
+@mixin modifyListStyle($select) {
+  #{$select} {
+    list-style: none;
+    float: left;
+    color: $color;
+  }
+}
+.row {
+  background: black;
+  height: 31px;
+  @include modifyListStyle("#headNavLeft li");
+  #headNavLeft li {
+    margin-left: 20px;
+    a {
+      color: $color;
+      line-height: 31px;
+      padding: 0px 10px;
+      text-decoration: none;
+      font-size: 10px;
+      &:hover {
+        color: #ffffff;
+      }
+    }
+    span {
+      color: $color;
+      line-height: 31px;
+    }
+  }
+  @include modifyListStyle("#headNavRight li");
+  #headNavRight {
+    margin-left: 50px;
+    li {
+      width: 85px;
+      a {
+        color: $color;
+        line-height: 31px;
+        padding: 0px 6px;
+        text-decoration: none;
+        font-size: 10px;
+        &:hover {
+          color: #ffffff;
+        }
+        img {
+          zoom: 0.5;
+        }
+      }
+    }
+  }
+  #headNavRight span li {
+    width: 100px;
+  }
+  .personalCenterList {
+    background: #ffffff;
+    display: none;
+  }
+  #headNavRight .personalCenterList li {
+    clear: both;
+    margin-left: -40px;
+  }
+  #headNavRight span li:hover {
+    background: #ffffff;
+    .personalCenterList {
+      display: block;
+    }
+    > a {
+      color: red;
+    }
+  }
+  #personalCenterList a {
+    color: $color;
+  }
+}

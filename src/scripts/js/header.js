@@ -8,8 +8,6 @@ require(['../libs/config'], () => {
         '_swiper'
     ], ($, Swiper) => {
         $(function () {
-            console.log($);
-            console.log(Swiper);
         })
     })
 })
