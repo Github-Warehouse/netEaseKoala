@@ -6,11 +6,323 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="./scripts/libs/require.js" data-main="./scripts/js/index.js"></script>
+    <link rel="stylesheet" href="./styles/css/index.css">
+    <link rel="stylesheet" href="./styles/css/header.css">
     <title>首页</title>
 </head>
 
 <body>
-    首页
+    <div class="jumbotron listNavTop">
+        <!-- 首页头部信息图片 -->
+        <img src="../images/header.png" alt="" srcset="">
+        <!-- 首页头部信息导航栏 -->
+        <div class="row list">
+            <div class="col-md-3 col-md-offset-2">
+                <ul id="headNavLeft">
+                    <li><span>考拉欢迎你</span></li>
+                    <li><a href="">登录</a></li>
+                    <li><a href="">免费注册</a></li>
+                    <li><a href="">手机考拉</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul id="headNavRight">
+                    <li><a href="">每日签到</a></li>
+                    <li><a href="">我的订单</a></li>
+                    <span>
+                        <li>
+                            <a href="" class="headNav01">个人中心
+                                <img src="../images/headNav01.png" alt="" srcset="" class="headNav01">
+                                <!-- <img src="../images/headeNavHover01.png" alt="" srcset="" class="headeNavHover01"> -->
+                            </a>
+                            <ul class="personalCenterList">
+                                <li><a href="">我的优惠券</a></li>
+                                <li><a href="">我的红包</a></li>
+                                <li><a href="">我的考拉豆</a></li>
+                                <li><a href="">账号管理</a></li>
+                                <li><a href="">我的实名认证</a></li>
+                                <li><a href="">我的发票抬头</a></li>
+                                <li><a href="">我收藏的商品</a></li>
+                                <li><a href="">我关注的品牌</a></li>
+                                <li><a href="">售后管理</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">客户服务
+                                <img src="../images/headNav01.png" alt="" srcset="" class="headNav01">
+                                <!-- <img src="../images/headeNavHover01.png" alt="" srcset="" class="headeNavHover01"> -->
+                            </a>
+                            <ul class="personalCenterList">
+                                <li><a href="">联系客服</a></li>
+                                <li><a href="">帮助中心</a></li>
+                                <li><a href="">知识产权保护</a></li>
+                                <li><a href="">规则中心</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">充值中心
+                                <img src="../images/headNav01.png" alt="" srcset="">
+                            </a>
+                            <ul class="personalCenterList">
+                                <li><a href="">话费流量</a></li>
+                                <li><a href="">游戏充值</a></li>
+                                <li><a href="">AppStore充值卡</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">消费者权益
+                                <img src="../images/headNav01.png" alt="" srcset="">
+                            </a>
+                            <ul class="personalCenterList">
+                                <li><a href="">消费者告知书</a></li>
+                                <li><a href="">消费投诉公示</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">更多
+                                <img src="../images/headNav01.png" alt="" srcset="">
+                            </a>
+                            <ul class="personalCenterList">
+                                <li><a href="">收藏本站</a></li>
+                                <li><a href="">新浪微博</a></li>
+                                <li><a href="">微信公众号</a></li>
+                                <li><a href="">易信公众号</a></li>
+                                <li><a href="">招商合作</a></li>
+                                <li><a href="">考拉招聘</a></li>
+                            </ul>
+                        </li>
+                    </span>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container logo">
+        <div class="row">
+            <div class="col-md-4">
+                <a href="">
+                    <img src="images/logokaola.png" alt="" srcset="">
+                </a>
+            </div>
+            <div class="col-md-6">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">
+                            <img src="images/searchButton.png" alt="" srcset="">
+                        </button>
+                    </span>
+                </div><!-- input-group -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="listBottom">
+                            <li><a href="">面膜</a></li>
+                            <li><a href="">口红</a></li>
+                            <li><a href="">减肥</a></li>
+                            <li><a href="">全球工厂店</a></li>
+                            <li><a href="">运动鞋</a></li>
+                            <li><a href="">项链</a></li>
+                            <li><a href="">女包</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- col-md-6 -->
+            <div class="col-md-1">
+                <span class="shopButtonBox">
+                    <button class="btn btn-default shopButton" type="button">
+                        <img src="images/shopBUtton.png" alt="" srcset="">
+                        <span>购物车</span>
+                    </button>
+                </span>
+            </div><!-- col-md-6 -->
+        </div><!-- row -->
+        <div class="row shopingBox">
+            <div class="col-md-2">
+                <ul class="listNavHead">
+                    <li><span><img src="images/listNavImg01.png"></span><span>所有分类</span></li>
+                </ul>
+            </div>
+            <div class="col-md-10">
+                <ul class="indexNav">
+                    <li><a href="">首页</a></li>
+                    <li><a href="">今日限时购</a></li>
+                    <li><a href="">每日上新</a></li>
+                    <li><a href="">国家馆</a></li>
+                    <li><a href="">海外旗舰店</a></li>
+                    <li><a href="">工厂店</a></li>
+                    <li><a href="">品质奶粉</a></li>
+                    <li><a href="">人气面膜</a></li>
+                    <li><a href="">礼品卡 </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <ul class="listNav">
+                    <li><img class="icon"
+                            src="//haitao.nos.netease.com/1cet9magj32_40_40.png?imageView&thumbnail=20x20&quality=100"><img
+                            class="icon iconhv"
+                            src="//haitao.nos.netease.com/1cet9me3j68_40_40.png?imageView&thumbnail=20x20&quality=100"><a
+                            href="">美容彩妆</a></li>
+                    <li><img class="icon"
+                            src="//haitao.nos.netease.com/1cet9lmhg85_40_40.png?imageView&thumbnail=20x20&quality=100"><img
+                            class="icon iconhv"
+                            src="//haitao.nos.netease.com/1cet9ls7k45_40_40.png?imageView&thumbnail=20x20&quality=100"><a
+                            href="">母婴儿童</a></li>
+                    <li><img class="icon"
+                            src="//haitao.nos.netease.com/1cet9no5t81_40_40.png?imageView&thumbnail=20x20&quality=100"><img
+                            class="icon iconhv"
+                            src="//haitao.nos.netease.com/1cet9nrmp35_40_40.png?imageView&thumbnail=20x20&quality=100"><a
+                            href="">营养保健</a></li>
+                    <li><img class="icon"
+                            src="//haitao.nos.netease.com/1cet9ogop45_40_40.png?imageView&thumbnail=20x20&quality=100"><img
+                            class="icon iconhv"
+                            src="//haitao.nos.netease.com/1cet9ojpr14_40_40.png?imageView&thumbnail=20x20&quality=100"><a
+                            href="">数码家电</a></li>
+                    <li><img class="icon"
+                            src="//haitao.nos.netease.com/1cet9n9g361_40_40.png?imageView&thumbnail=20x20&quality=100"><img
+                            class="icon iconhv"
+                            src="//haitao.nos.netease.com/1cet9ndou57_40_40.png?imageView&thumbnail=20x20&quality=100"><a
+                            href="">个人洗护</a></li>
+                    <li><img class="icon"
+                            src="//haitao.nos.netease.com/1cet9peo633_40_40.png?imageView&thumbnail=20x20&quality=100"><img
+                            class="icon iconhv"
+                            src="//haitao.nos.netease.com/1cet9pia154_40_40.png?imageView&thumbnail=20x20&quality=100"><a
+                            href="">服饰鞋靴</a></li>
+                    <li><img class="icon"
+                            src="//haitao.nos.netease.com/1cet9p5fv45_40_40.png?imageView&thumbnail=20x20&quality=100"><img
+                            class="icon iconhv"
+                            src="//haitao.nos.netease.com/1cet9p8db3_40_40.png?imageView&thumbnail=20x20&quality=100"><a
+                            href="">运动户外</a></li>
+                    <li><img class="icon"
+                            src="//haitao.nos.netease.com/1cet9o36p76_40_40.png?imageView&thumbnail=20x20&quality=100"><img
+                            class="icon iconhv"
+                            src="//haitao.nos.netease.com/1cet9o6e796_40_40.png?imageView&thumbnail=20x20&quality=100"><a
+                            href="">手表配饰</a></li>
+                    <li><img class="icon"
+                            src="//haitao.nos.netease.com/1cet9mvrc65_40_40.png?imageView&thumbnail=20x20&quality=100"><img
+                            class="icon iconhv"
+                            src="//haitao.nos.netease.com/1cet9msvd91_40_40.png?imageView&thumbnail=20x20&quality=100"><a
+                            href="">轻奢</a></li>
+                    <li><img class="icon"
+                            src="//haitao.nos.netease.com/1cvslvedr99_40_40.png?imageView&thumbnail=20x20&quality=100"><img
+                            class="icon iconhv"
+                            src="//haitao.nos.netease.com/1cvslvjhg58_40_40.png?imageView&thumbnail=20x20&quality=100"><a
+                            href="">家居生活</a></li>
+                    <li><img class="icon"
+                            src="//haitao.nos.netease.com/1cet9or5050_40_40.png?imageView&thumbnail=20x20&quality=100"><img
+                            class="icon iconhv"
+                            src="//haitao.nos.netease.com/1cet9oun595_40_40.png?imageView&thumbnail=20x20&quality=100"><a
+                            href="">环球美食</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="rotationChart">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <!-- <ul class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+                        </ul> -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img class="img-responsive"
+                                    src="https://haitao.nosdn2.127.net/439672d9-f7f2-4397-96b4-fe1e37f6c29fT1904021959_1920_506.jpg?imageView&thumbnail=1920x0&quality=90" />
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive"
+                                    src="https://haitao.nosdn2.127.net/5f4382af-e4b8-4f02-82c7-97616f978c48T1905201639_1920_506.jpg?imageView&thumbnail=1920x0&quality=90" />
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive"
+                                    src="https://haitao.nosdn2.127.net/daef2cc7-4ccc-4175-9796-5d0efa71b838T1901042109_1920_506.jpg?imageView&thumbnail=1920x0&quality=90" />
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive"
+                                    src="https://haitao.nosdn1.127.net/3b97df8f-9844-4718-b0c1-cca9e6bc44beT1905202018_1920_506.jpg?imageView&thumbnail=1920x0&quality=90" />
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive"
+                                    src="https://haitao.nos.netease.com/677dd62f-ac44-40d9-84b5-f8408666b443T1905201518_1920_506.jpg?imageView&thumbnail=1920x0&quality=90" />
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive"
+                                    src="https://haitao.nosdn1.127.net/093ef997-3eb8-49f7-815b-ef90190a1f8fT1905202142_1920_506.jpg?imageView&thumbnail=1920x0&quality=90" />
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive"
+                                    src="https://haitao.nosdn2.127.net/afa8bd34-fff9-4a1e-a5d1-b8b2c34f5159T1905171638_1920_506.jpg?imageView&thumbnail=1920x0&quality=90" />
+                            </div>
+                        </div>
+                        <a class="left carousel-control" href="#carousel-example-generic" role="button"
+                            data-slide="prev">
+                            <span class="buttonLeft"><img src="images/buttonLeft.png" alt="" srcset=""></span>
+                            <span class="sr-only">Previous</span> </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" role="button"
+                            data-slide="next">
+                            <span class="buttonRight"><img src="images/buttonRight.png" alt="" srcset=""></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <div class="rotationChartBottom">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <ul class="rotationChartBottomNav">
+                                        <li> <img src="images/pic01.png" alt=""><a href="">网易自营</a></li>
+                                        <li> <img src="images/pic02.png" alt=""><a href="">全球直采</a></li>
+                                        <li> <img src="images/pic03.png" alt=""><a href="">假一赔十</a></li>
+                                        <li> <img src="images/pic04.png" alt=""><a href="">售后无忧</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <ul class="rotationChartBottomNavRight">
+                                        <li> <img src="images/pic05.png" alt=""><a href="">领考拉1000元新人礼，APP下单更享手机价</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--rotationChart-->
+            </div>
+            <!--col-md-12-->
+        </div>
+        <!--row-->
+    </div>
+    <!--jumbotron-->
+    <div class="container shopBox">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="images/shoplist01_01.png" alt="" srcset="">
+            </div>
+            <div class="col-md-3">
+                <img src="images/shoplist01_02.png" alt="" srcset="">
+            </div>
+            <div class="col-md-3">
+                <img src="images/shoplist01_03.png" alt="" srcset="">
+            </div>
+            <div class="col-md-3">
+                <img src="images/shoplist01_04.png" alt="" srcset="">
+            </div>
+        </div>
+        <!--row-->
+    </div>
+    <!--container-->
+    <div class="container beautyMakeupArea">
+        <div class="row">
+        </div>
+        <!--row-->
+    </div>
+    <!--container-->
 </body>
 
 </html>

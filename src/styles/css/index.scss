@@ -1,0 +1,174 @@
+$color: #999;
+@mixin modifyListStyle($select) {
+  #{$select} {
+    list-style: none;
+    float: left;
+    color: $color;
+    margin-left: 25px;
+  }
+}
+.logo {
+  position: absolute;
+  left: 370px;
+  z-index: 9998;
+  .input-group {
+    border: 2px solid red;
+    border-radius: 6px;
+    .form-control {
+      border: 1px solid red;
+    }
+    .input-group-btn {
+      border-left: 2px solid red;
+      .btn-default {
+        border: 1px solid red;
+        &:hover {
+          background: rgb(236, 178, 186);
+        }
+      }
+    }
+  }
+  @include modifyListStyle(".listBottom li");
+  .listBottom {
+    a {
+      color: $color;
+      &:hover {
+        color: red;
+      }
+    }
+  }
+  .shopButton {
+    border: 2px solid red;
+    width: 110px;
+    border-radius: 50px;
+    text-align: center;
+    span {
+      padding-left: 8px;
+      position: relative;
+      top: 2px;
+    }
+    &:hover {
+      border: 2px solid red;
+      background: rgb(236, 178, 186);
+      color: #ffffff;
+    }
+  }
+  .shopingBox {
+    margin-top: 10px;
+    .listNavHead {
+      list-style: none;
+      background: linear-gradient(to right, red, #ff3061);
+      li {
+        margin-left: -42px;
+        padding: 9px;
+        span {
+          color: #ffffff;
+          font-size: 15px;
+          padding-left: 15px;
+        }
+      }
+    }
+  }
+  .indexNav {
+    li {
+      height: 42px;
+      list-style: none;
+      float: left;
+      padding-left: 40px;
+      line-height: 42px;
+      a {
+        color: black;
+        text-decoration: none;
+        font-size: 16px;
+        &:hover {
+          color: red;
+        }
+      }
+    }
+  }
+  .listNav {
+    list-style: none;
+    background: linear-gradient(to right, red, #ff3061);
+    margin-top: -8px;
+    li {
+      padding: 9.2px;
+      margin-left: -40px;
+      border-bottom: 1px solid #ffffff;
+      span > img {
+        zoom: 0.7;
+      }
+      .icon {
+        padding-left: 15px;
+      }
+      .iconhv {
+        display: none;
+      }
+      span {
+        color: #ffffff;
+        font-size: 15px;
+        padding-left: 15px;
+      }
+      a {
+        @extend span;
+        text-decoration: none;
+      }
+      &:hover {
+        background: #ffffff;
+        .icon {
+          display: none;
+        }
+        .iconhv {
+          float: left;
+          display: block;
+        }
+        a {
+          color: red;
+        }
+      }
+    }
+  }
+}
+.jumbotron {
+  background: #ffffff !important;
+  .rotationChart {
+    position: absolute;
+    top: 120px;
+    z-index: 9996;
+    .buttonLeft {
+      line-height: 506px;
+    }
+    .buttonRight {
+      @extend .buttonLeft;
+    }
+  }
+  .rotationChartBottom {
+    position: relative;
+    left: -70px;
+    z-index: 9997;
+    background: rgba(0, 0, 0, 0.3);
+    height: 50px;
+    margin-top: -50px;
+    line-height: 50px;
+    .rotationChartBottomNav li {
+      list-style: none;
+      float: left;
+      a {
+        color: #ffffff;
+        padding-left: 12px;
+      }
+    }
+    .rotationChartBottomNav > li {
+      padding-left: 30px;
+    }
+    .rotationChartBottomNavRight li {
+      list-style: none;
+      float: left;
+      a {
+        color: #ffffff;
+        padding-left: 10px;
+      }
+    }
+  }
+}
+.shopBox {
+  margin-top: 650px;
+}

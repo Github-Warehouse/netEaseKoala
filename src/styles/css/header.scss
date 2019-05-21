@@ -1,7 +1,11 @@
 html,
 body {
-  overflow: hidden;
+  overflow-x: hidden; 
   //   background: red;
+}
+.listNavTop {
+  position: relative;
+  z-index: 9999;
 }
 .jumbotron {
   padding-top: 0px !important;
@@ -15,7 +19,7 @@ $color: #999;
     color: $color;
   }
 }
-.row {
+.list {
   background: black;
   height: 31px;
   @include modifyListStyle("#headNavLeft li");
@@ -60,6 +64,7 @@ $color: #999;
     width: 100px;
   }
   .personalCenterList {
+    position: absolute;
     background: #ffffff;
     display: none;
   }
