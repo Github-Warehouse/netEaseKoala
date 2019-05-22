@@ -52,12 +52,12 @@ gulp.task('server', () => {
     gulp.watch('src/images/**/*.*', ['compileIMG'])
 
     let app = express()
-    app.get('/api/goodlist', (req, res) => {
+    app.get('/api/kaolalist', (req, res) => {
         res.setHeader('Access-Control-Allow-Origin', '*')
         res.setHeader('Content-Type', 'text/plain;charset=utf8')
         let proxy = https.request({
-            hostname: 'www.smartisan.com',
-            path: '/product/shop_categories',
+            hostname: 'search.kaola.com',
+            path: '/api/getFrontCategory.shtml?xRequestedWith=XMLHttpRequest',
             method: 'get'
         }, (response) => {
             response.pipe(res)

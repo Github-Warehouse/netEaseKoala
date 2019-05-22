@@ -14,6 +14,7 @@ $color: #999;
   .input-group {
     border: 2px solid red;
     border-radius: 6px;
+    margin-top: 5px;
     .form-control {
       border: 1px solid red;
     }
@@ -21,14 +22,16 @@ $color: #999;
       border-left: 2px solid red;
       .btn-default {
         border: 1px solid red;
+        background: red;
         &:hover {
-          background: rgb(236, 178, 186);
+          background: linear-gradient(to right, red, #ff3061);
         }
       }
     }
   }
   @include modifyListStyle(".listBottom li");
   .listBottom {
+    margin-top: 5px;
     a {
       color: $color;
       &:hover {
@@ -41,6 +44,7 @@ $color: #999;
     width: 110px;
     border-radius: 50px;
     text-align: center;
+    margin-top: 5px;
     span {
       padding-left: 8px;
       position: relative;
@@ -48,8 +52,8 @@ $color: #999;
     }
     &:hover {
       border: 2px solid red;
-      background: rgb(236, 178, 186);
-      color: #ffffff;
+      background: rgb(255, 244, 245);
+      color: red;
     }
   }
   .shopingBox {
@@ -142,9 +146,10 @@ $color: #999;
   }
   .rotationChartBottom {
     position: relative;
-    left: -70px;
+    left: -130px;
     z-index: 9997;
     background: rgba(0, 0, 0, 0.3);
+    width: 2040px;
     height: 50px;
     margin-top: -50px;
     line-height: 50px;
@@ -169,6 +174,213 @@ $color: #999;
     }
   }
 }
-.shopBox {
+.stairs {
   margin-top: 650px;
+  .m-indexleft {
+    width: 101px;
+    height: 582px;
+    position: relative;
+    top: 0px;
+    left: -70px;
+    border: 1px solid #999;
+    .floor {
+      position: relative;
+      left: -20px;
+      li {
+        list-style: none;
+        width: 99px;
+        height: 32px;
+        a {
+          display: block;
+          width: 99px;
+          height: 32px;
+          text-decoration: none;
+          color: #999;
+          &:hover {
+            color: red;
+          }
+        }
+      }
+    }
+  }
+  .m-rightbar {
+    width: 64px;
+    height: 245px;
+    position: relative;
+    left: -60px;
+    border: 1px solid #999;
+    border-bottom: none;
+    .clearfix li {
+      list-style: none;
+      width: 62px;
+      height: 61px;
+      position: relative;
+      left: -40px;
+      a {
+        display: block;
+        width: 62px;
+        height: 61px;
+        text-align: center;
+        text-decoration: none;
+        border-bottom: 1px solid #999;
+        color: #999;
+        p {
+          margin: 0px;
+          padding: 0px;
+        }
+      }
+    }
+  }
+}
+.shopBox {
+  position: relative;
+  top: -612px;
+}
+.beautyMakeupArea {
+  position: relative;
+  top: -590px;
+  .beautyMakeupAreaTitle {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .hotSearchList {
+    margin-top: 5px;
+    .hotSearch {
+      float: left;
+    }
+    ul li {
+      list-style: none;
+      float: left;
+      a {
+        padding-left: 15px;
+        color: #999;
+        &:hover {
+          color: red;
+        }
+      }
+    }
+  }
+  .more a {
+    margin-top: 5px;
+    float: right;
+    color: #999;
+  }
+  .shopExhibitionList {
+    margin-top: 20px;
+    .bigPicExhibition {
+      position: relative;
+      z-index: 9995;
+    }
+  }
+  .bigPicExhibitionList {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+    z-index: 9997;
+    .bigPicExhibitionList_01 {
+      float: left;
+      list-style: none;
+      width: 73px;
+      height: 42px;
+      border: 1px solid #999999;
+      text-align: center;
+      line-height: 42px;
+      border-radius: 20px;
+      a {
+        color: rgb(87, 84, 84);
+        text-decoration: none;
+        &:hover{
+            color: red;
+        }
+      }
+    }
+    .bigPicExhibitionList_02 {
+      @extend .bigPicExhibitionList_01;
+      margin-left: 1.7px;
+    }
+    .bigPicExhibitionList_03 {
+      @extend .bigPicExhibitionList_02;
+    }
+    .bigPicExhibitionList_04 {
+      @extend .bigPicExhibitionList_01;
+      margin-top: 10px;
+    }
+    .bigPicExhibitionList_05 {
+      @extend .bigPicExhibitionList_01;
+      margin-top: 10px;
+      margin-left: 1.7px;
+    }
+    .bigPicExhibitionList_06 {
+      @extend .bigPicExhibitionList_05;
+    }
+  }
+  @mixin picExhibitionCenter($picExhibitionCenter) {
+    #{$picExhibitionCenter} {
+      list-style: none;
+      border-right: 1px solid #999999;
+      border-bottom: 1px solid #999999;
+      width: 257px;
+      height: 267px;
+      float: left;
+      text-align: center;
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+  @include picExhibitionCenter(".picExhibitionCenter .picExhibitionCenter_01");
+  @include picExhibitionCenter(".picExhibitionCenter .picExhibitionCenter_02");
+  @include picExhibitionCenter(".picExhibitionCenter .picExhibitionCenter_03");
+  @include picExhibitionCenter(".picExhibitionCenter .picExhibitionCenter_04");
+  @mixin itemsale($itemsale) {
+    #{$itemsale} {
+      border-top: 1px solid #999999;
+      width: 260px;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      a {
+        color: #999999;
+        align-items: center;
+        &:hover {
+          color: #999999;
+        }
+      }
+      p {
+        float: left;
+        .moneyIcon {
+          color: red;
+          font-size: 20px;
+        }
+        .money {
+          @extend .moneyIcon;
+        }
+      }
+    }
+  }
+  @include itemsale(".itemsale");
+  .coverMarginBottom {
+    border: 1px solid #999999;
+    width: 1140px;
+    height: 218px;
+    .txt {
+      border-bottom: 1px solid #999999;
+      height: 49px;
+      line-height: 49px;
+      padding-left: 10px;
+    }
+    .brandListContainer {
+      height: 167px;
+      display: flex;
+      align-items: center;
+      a {
+        width: 228px;
+        height: 167px;
+        border-right: 1px solid #999999;
+        text-align: center;
+        line-height: 167px;
+      }
+    }
+  }
 }
