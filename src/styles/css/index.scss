@@ -139,9 +139,13 @@ $color: #999;
     z-index: 9996;
     .buttonLeft {
       line-height: 506px;
+      position: relative;
+      left: -100px;
     }
     .buttonRight {
-      @extend .buttonLeft;
+      line-height: 506px;
+      position: relative;
+      left: -30px;
     }
   }
   .rotationChartBottom {
@@ -289,8 +293,8 @@ $color: #999;
       a {
         color: rgb(87, 84, 84);
         text-decoration: none;
-        &:hover{
-            color: red;
+        &:hover {
+          color: red;
         }
       }
     }
@@ -364,6 +368,7 @@ $color: #999;
     border: 1px solid #999999;
     width: 1140px;
     height: 218px;
+    margin-top: 10px;
     .txt {
       border-bottom: 1px solid #999999;
       height: 49px;
@@ -382,5 +387,80 @@ $color: #999;
         line-height: 167px;
       }
     }
+  }
+}
+.guessLike {
+  width: 100%;
+  height: 450px;
+  background: rgb(250, 250, 250);
+  position: absolute;
+  left: 365px;
+  top: 10685px;
+  .guessLikeTitle {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .guessLikeTxt {
+    position: relative;
+    top: 5px;
+  }
+  .guessLikePic {
+    .guessLikePicBox {
+      margin-top: 25px;
+      display: block;
+      width: 260px;
+      height: 260px;
+      background: #ffffff;
+      display: flex;
+      img {
+        width: 180px;
+        height: 180px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+    }
+    .guessLikeIntroduce {
+      margin-top: 25px;
+      a {
+        font-size: 16px;
+        color: black;
+      }
+    }
+    .guessLikeMoneyIcon {
+      color: red;
+      font-size: 20px;
+    }
+    .guessLikMoney {
+      @extend .guessLikeMoneyIcon;
+    }
+    .guessLikeEvaluate {
+      margin-left: 70px;
+      a {
+        color: #999;
+        font-size: 12px;
+      }
+    }
+  }
+}
+#aboutNEST {
+  width: 100%;
+  height: 200px;
+  background: #333333;
+  text-align: center;
+  line-height: 30px;
+  display: flex;
+  color: #c2c2c2;
+  .aboutNESTcontent {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  a{
+    color: #c2c2c2;
   }
 }
