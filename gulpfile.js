@@ -11,6 +11,8 @@ const imagemin = require('gulp-imagemin')
 gulp.task('compileHTML', () => {
     gulp.src('./src/**/*.html')
         .pipe(gulp.dest('dist'))
+        gulp.src('./src/pages/**/*.html')
+        .pipe(gulp.dest('dist/pages'))
 })
 gulp.task('compileCSS', () => {
     gulp.src('./src/styles/**/*.scss')

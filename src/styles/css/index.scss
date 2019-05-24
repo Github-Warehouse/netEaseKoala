@@ -460,7 +460,20 @@ $color: #999;
     right: 0;
     margin: auto;
   }
-  a{
+  a {
     color: #c2c2c2;
+  }
+}
+#exampleModal {
+  position: fixed;
+  top: 300px;
+  #exampleModalLabel {
+    span {
+      font-size: 30px;
+        color: black;
+      a{
+        color: red;
+      }
+    }
   }
 }

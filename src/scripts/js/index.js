@@ -15,24 +15,30 @@ require(['../libs/config'], () => {
                 $(this).css('color', '#999')
             })
             $('#img01').hover(function () {
-                $('#img01 img').attr('src',`images/clearfix_01_hover.png`)
-            },function(){
-                $('#img01 img').attr('src',`images/clearfix_01.png`)
+                $('#img01 img').attr('src', `images/clearfix_01_hover.png`)
+            }, function () {
+                $('#img01 img').attr('src', `images/clearfix_01.png`)
             })
             $('#img02').hover(function () {
-                $('#img02 img').attr('src',`images/clearfix_02_hover.png`)
-            },function(){
-                $('#img02 img').attr('src',`images/clearfix_02.png`)
+                $('#img02 img').attr('src', `images/clearfix_02_hover.png`)
+            }, function () {
+                $('#img02 img').attr('src', `images/clearfix_02.png`)
             })
             $('#img03').hover(function () {
-                $('#img03 img').attr('src',`images/clearfix_03_hover.png`)
-            },function(){
-                $('#img03 img').attr('src',`images/clearfix_03.png`)
+                $('#img03 img').attr('src', `images/clearfix_03_hover.png`)
+            }, function () {
+                $('#img03 img').attr('src', `images/clearfix_03.png`)
             })
             $('#img04').hover(function () {
-                $('#img04 img').attr('src',`images/clearfix_04_hover.png`)
-            },function(){
-                $('#img04 img').attr('src',`images/clearfix_04.png`)
+                $('#img04 img').attr('src', `images/clearfix_04_hover.png`)
+            }, function () {
+                $('#img04 img').attr('src', `images/clearfix_04.png`)
+            })
+            $('.sure').click(function () {
+                location.href = 'pages/login.html'
+            })
+            $('.shopButton').click(function(){
+                location.href='pages/details.html'
             })
             $.ajax({
                 type: 'get',

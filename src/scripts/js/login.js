@@ -8,7 +8,22 @@ require(['../libs/config'], () => {
         '_swiper'
     ], ($, Swiper) => {
         $(function () {
-            console.log($);
+            $('#loginButton').click(function () {
+                let username = $('#username').val()
+                let password = $('#password').val()
+                let objJson = JSON.parse(localStorage.getItem("json"))
+                if (username == "") {
+                    alert('用户名不能我空')
+                } else if (password == "") {
+                    alert('密码不能我空')
+                } else {
+                    if (username != objJson.name || password != objJson.password) {
+                        alert('账号或密码错误')
+                    } else {
+                        location.href = "www.baidu.com"
+                    }
+                }
+            })
         })
     })
 })

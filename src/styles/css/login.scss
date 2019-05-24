@@ -1,0 +1,32 @@
+.login {
+  h4 {
+    text-align: center;
+  }
+  #loginButton {
+    background: rgb(52, 58, 64);
+    color: #ffffff;
+    &:hover {
+      background: rgb(35, 39, 43);
+    }
+  }
+  .mima-box {
+    text-align: right;
+    margin-top: 10px;
+    a {
+      color: #333333;
+    }
+  }
+}
+.qita-login {
+  text-align: center;
+}
+.qita-login-logo {
+  margin-top: 10px;
+  a {
+    padding-left: 50px;
+  }
+}
+.footerIframe {
+  position: fixed;
+  bottom: 0;
+}

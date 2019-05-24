@@ -1,0 +1,71 @@
+.guessLikeTitle {
+  font-size: 20px;
+  font-weight: bold;
+}
+.guessLikeTxt {
+  position: relative;
+  top: 5px;
+}
+.shopBox {
+  width: 1090px;
+  height: 218px;
+  display: flex;
+  .shopBoxbottom {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    a {
+      color: rgb(209, 33, 71);
+    }
+  }
+}
+.guessLikePic {
+  margin-left: -45px;
+  margin-top: 20px;
+  li {
+    float: left;
+    margin-left: 10px;
+    width: 205px;
+    height: 380px;
+    border: 1px solid #999999;
+    list-style: none;
+    .guessLikePicBox {
+      img {
+        width: 203px;
+        height: 203px;
+      }
+    }
+    .guessLikeIntroduce {
+      margin-top: 25px;
+      padding: 10px;
+      a {
+        font-size: 12px;
+        color: black;
+      }
+    }
+    .moneyBox {
+      position: absolute;
+      top: 320px;
+      padding: 0px 10px;
+    }
+    .guessLikeMoneyIcon {
+      color: red;
+      font-size: 20px;
+    }
+    .guessLikMoney {
+      @extend .guessLikeMoneyIcon;
+    }
+    .guessLikeEvaluate {
+      padding: 0px 20px;
+      a {
+        color: #999;
+        font-size: 12px;
+      }
+    }
+  }
+}
+.next02 {
+  margin: 30px auto 70px auto;
+}

@@ -1,0 +1,1 @@
+"use strict";require(["../libs/config"],function(){require(["jquery","css","bootstrap","jquery-ui","jquery.validate","_swiper"],function(i,e){i(function(){})})});
