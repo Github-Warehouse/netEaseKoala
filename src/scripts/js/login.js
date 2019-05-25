@@ -12,6 +12,7 @@ require(['../libs/config'], () => {
                 let username = $('#username').val()
                 let password = $('#password').val()
                 let objJson = JSON.parse(localStorage.getItem("json"))
+                console.log(objJson);
                 if (username == "") {
                     alert('用户名不能我空')
                 } else if (password == "") {
@@ -20,7 +21,7 @@ require(['../libs/config'], () => {
                     if (username != objJson.name || password != objJson.password) {
                         alert('账号或密码错误')
                     } else {
-                        location.href = "www.baidu.com"
+                        location.href = "shoppingCart.html"
                     }
                 }
             })
