@@ -21,7 +21,6 @@ require(['../libs/config'], () => {
                 } else if (password != conPassword) {
                     alert('两次密码输入不一致')
                 } else {
-                    
                     let json = {
                         name: username,
                         password: password
